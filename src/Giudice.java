@@ -1,8 +1,20 @@
 public class Giudice implements Runnable {
+String classifica="";
+int posizione = 0;
 
-    public synchronized void fineGara(Atleta atleta) {
+
+
+    public synchronized void traguardo(Atleta atleta) {
         System.out.println("è arrivato: " + atleta.nome);
+        posizione ++;
+        classifica += posizione + " " + atleta.nome + " " ;
+
     }
+
+    public void podio(){
+        System.out.println("il podio è " + classifica);
+    }
+
 
     @Override
     public void run() {

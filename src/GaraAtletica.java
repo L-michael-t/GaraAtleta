@@ -6,26 +6,28 @@ public class GaraAtletica {
 
         Atleta a1 = new Atleta(67, "pongre",giudice);
         Atleta a2 = new Atleta(68, "tifux",giudice);
-        Thread ta2 = new Thread(a2);
-        ta2.setPriority(10);
-        Thread ta1 = new Thread(a1);
+        Atleta a3 = new Atleta(69, "pinguino",giudice);
 
+        Thread ta1 = new Thread(a1);
+        Thread ta2 = new Thread(a2);
+        Thread ta3 = new Thread(a3);
 
         for(int i = 3; i > 0; --i) {
             System.out.println("Inizio in:" + i);
         }
 
-
         ta1.start();
-
+        ta2.start();
+        ta3.start();
 
         try {
             ta1.join();
+            ta2.join();
+            ta3.join();
         } catch (InterruptedException var6) {
             System.err.println("Errore join");
         }
 
-
-        ta2.start();
+        giudice.podio();
     }
 }
