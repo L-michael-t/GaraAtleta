@@ -1,10 +1,14 @@
-public class Main {
+public class GaraAtletica {
     public static void main(String[] args) {
         System.out.println("Gara Atletica");
-        Atleta a1 = new Atleta(67, "tifi");
-        Atleta a2 = new Atleta(68, "onofrai");
-        Thread ta1 = new Thread(a1);
+        Giudice giudice= new Giudice();
+
+
+        Atleta a1 = new Atleta(67, "pongre",giudice);
+        Atleta a2 = new Atleta(68, "tifux",giudice);
         Thread ta2 = new Thread(a2);
+        ta2.setPriority(10);
+        Thread ta1 = new Thread(a1);
 
 
         for(int i = 3; i > 0; --i) {
