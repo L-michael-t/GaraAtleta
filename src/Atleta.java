@@ -22,7 +22,7 @@ public class Atleta implements Runnable {
 
 
         while (this.metri <= (double) 50.0F) {
-            this.metri += metriPercorsi.nextDouble((double) 10.0F);
+            this.metri += metriPercorsi.nextDouble();
             System.out.println(this.nome + " Metri Percorsi: " + this.metri);
 
 
