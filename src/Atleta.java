@@ -7,7 +7,7 @@ public class Atleta implements Runnable {
     Giudice giudice;
     double tempo = (double) 0.0F;
     double metri = (double) 0.0F;
-    final double LUNGHEZZAGARA = (double) 50.0F;
+    final double LUNGHEZZAGARA = (double) 100.0F;
 
 
     public Atleta(int pNumero, String pNome, Giudice pgiudice) {
@@ -19,10 +19,12 @@ public class Atleta implements Runnable {
 
     public void run() {
         Random metriPercorsi = new Random();
+        double minIncrement = 2.0; // minimo incremento per ciclo (metri)
+        double maxIncrement = 6.0; // massimo incremento per ciclo (metri)
 
 
-        while (this.metri <= (double) 50.0F) {
-            this.metri += metriPercorsi.nextDouble();
+        while (this.metri <= (double) LUNGHEZZAGARA) {
+            this.metri += minIncrement + (maxIncrement - minIncrement) * metriPercorsi.nextDouble();
             System.out.println(this.nome + " Metri Percorsi: " + this.metri);
 
 

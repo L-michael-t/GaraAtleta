@@ -10,6 +10,7 @@ int posizione = 0;
         classifica += posizione + " " + atleta.nome + " " ;
 
     }
+    
 
     public void podio(){
         System.out.println("il podio è " + classifica);
