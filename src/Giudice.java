@@ -1,6 +1,7 @@
 public class Giudice implements Runnable {
 String classifica="";
 int posizione = 0;
+final double LUNGHEZZAGARA = (double) 100.0F;
 
 
 
