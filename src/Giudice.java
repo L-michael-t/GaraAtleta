@@ -1,3 +1,9 @@
+/**
+ * Giudice.java
+ * questa classe gestisce l'arrivo degli atleti e la classifica finale
+ * @author Michael Tifi
+ */
+
 public class Giudice implements Runnable {
 String classifica="";
 int posizione = 0;
