@@ -17,6 +17,9 @@ final double LUNGHEZZAGARA = (double) 100.0F;
         System.out.println("il podio è " + classifica);
     }
 
+    public String getClassifica() {
+        return classifica;
+    }
 
     @Override
     public void run() {

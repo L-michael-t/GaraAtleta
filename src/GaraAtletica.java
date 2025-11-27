@@ -2,7 +2,7 @@ public class GaraAtletica {
     public static void main(String[] args) {
         System.out.println("Gara Atletica");
         Giudice giudice= new Giudice();
-
+        GestoreFile gestore = new GestoreFile("podii.txt");
 
         Atleta a1 = new Atleta(67, "pongre",giudice);
         Atleta a2 = new Atleta(68, "tifux",giudice);
@@ -29,5 +29,7 @@ public class GaraAtletica {
         }
 
         giudice.podio();
+        gestore.salvaPodio(giudice);
+        gestore.leggiPodii();
     }
 }
