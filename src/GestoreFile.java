@@ -1,7 +1,7 @@
 /**
  * GestoreFile.java
  * questa classe gestisce il salvataggio e la lettura dei podii su file
- * @author Michael Tifi 
+ * @author Michael Tifi (l'ho scritto in automatica dall'IDE)
  */
 
 import java.io.*;
