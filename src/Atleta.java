@@ -1,7 +1,7 @@
 /**
  * Atleta.java
  * questa classe gestisce gli atleti che partecipano alla gara
- * @author Michael Tifi (l'ho scritto in automatica dall'IDE
+ * @author Michael Tifi (l'ho scritto in automatica dall'IDE)
  */
 import java.util.Random;
 

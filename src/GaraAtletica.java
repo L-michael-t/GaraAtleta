@@ -1,8 +1,9 @@
 /**
  * GaraAtletica.java
  * questa classe contiene il metodo main per avviare la gara atletica
- * @author Michael Tifi (l'ho scritto in automatica dall'IDE)
+ * @author Michael Tifi (l'ho scritto in automatica dall'IDE))
  */
+
 
 public class GaraAtletica {
     public static void main(String[] args) {
