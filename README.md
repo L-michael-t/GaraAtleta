@@ -14,6 +14,8 @@ Per personalizzare il gioco si potrà infatti scegliere di favorire o di sfavori
 1. in questo progetto ho scritto un numero preciso di giocatori con una distanza specificata all'interno del codice
 2. tutto è prestabilito all'interno del codice
 3. i giocatori vanno avanti di metri in modo casuale con un numero tra 2 e 6 per avere una gara piu realistica in modo che non vinca sempre la stessa persona
+4. all'interno cè un giudice che controlla e scrive la classifica degli atleti a fine gara
+5. cè anche un gestore file che insieme al giudice prende quella classifica della gara e la scrive all'interno di un file chiamato podii.txt
 
 
 # dove ho preso spunto e crediti
