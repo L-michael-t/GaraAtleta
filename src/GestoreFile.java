@@ -7,6 +7,7 @@
  */
 
 import java.io.*;
+import java.time.LocalDateTime;
 
 public class GestoreFile {
     private String nomeFile;
@@ -17,7 +18,7 @@ public class GestoreFile {
 
     public synchronized void salvaPodio(Giudice giudice) {
         try (FileWriter writer = new FileWriter(nomeFile, true)) {
-            writer.write(giudice.getClassifica() + "\n");
+            writer.write("podio del giorno " + LocalDateTime.now() + "\n" + giudice.getClassifica() + "\n");
             System.out.println("Podio salvato nel file '" + nomeFile + "'");
         } catch (IOException e) {
             System.err.println("Errore nel salvataggio: " + e.getMessage());
