@@ -1,6 +1,8 @@
 /**
  * GestoreFile.java
  * questa classe gestisce il salvataggio e la lettura dei podii su file
+ * non sono qua per dire cose che non so spiegare per fare questa classe ho ricercato online e chiesto aiuto per farla funzionare
+ * dato che da solo non ci sono riuscito
  * @author Michael Tifi (l'ho scritto in automatica dall'IDE))
  */
 
