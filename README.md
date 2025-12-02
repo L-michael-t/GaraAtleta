@@ -18,7 +18,7 @@ Per personalizzare il gioco si potrà infatti scegliere di favorire o di sfavori
 5. cè anche un gestore file che insieme al giudice prende quella classifica della gara e la scrive all'interno di un file chiamato podii.txt
 
 
-# dove ho preso spunto e crediti
+# DOVE HO PRESO SPUNTO E CREDITI
 
 eusto è stato un lavoro scolastico all'interno dell'istituto ITTS A.Volta,aiutato dai miei compagni di classe ma soprattutto ho preso molto spunto dal codice del mio professore Francesco Amendola 
  
